@@ -1,18 +1,30 @@
+import { Link } from 'react-router-dom';
+
+import { FiHome } from 'react-icons/fi';
+import { BsPerson } from 'react-icons/bs';
+
+
 const Navbar = ({ show }) => {
 
  return (
   <div className={show ? 'sidenav active' : 'sidenav'}>
    <ul>
     <li>
-     <a href="/">Home</a>
+     <Link to="/">
+      <FiHome />
+         Home
+      </Link>
     </li>
 
     <li>
-     <a href="/">About</a>
+     <Link to="/about">
+      <BsPerson />
+        About
+      </Link>
     </li>
 
     <li>
-     <a href="/">Contact me</a>
+     <Link to="/">Contact me</Link>
     </li>
 
 
