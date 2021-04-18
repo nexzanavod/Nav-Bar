@@ -19,7 +19,13 @@ header{
   position: absolute;
   height: 95vh;
   padding: 0.30px;
+  left: -100%;
   transition: all is;
+}
+
+.sidenav.active{
+   left: 0;
+
 }
 
 ul{
@@ -28,6 +34,7 @@ ul{
 
 ul li{
   list-style-type: none;
+  margin: 10px 0;
 }
 
 ul li a{
@@ -47,6 +54,8 @@ ul li a.active{
 }
 
 
-
+header svg{
+  font-size: 20px;
+}
 
 
